@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restan - Best Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-left">
+                    <i class="fas fa-phone"></i> Phone: +4733378901
+                    <i class="fas fa-envelope"></i> Email: food@restan.com
+                </div>
+                <div class="top-bar-right">
+                    <div class="language-selector">
+                        <img src="./images/flag.png" alt="English"> English <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Restan">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Pages <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Menu <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Blog <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Shop <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/bestRes.jpg" alt="Restaurant Interior">
+        </div>
+        <div class="hero-content">
+            <h1>Best Restaurant</h1>
+            <div class="rotating-circle-container">
+                <div class="rotating-circle">
+                    <span class="rotating-text">Best Food Since - 1865</span>
+                </div>
+                <a href="#" class="play-button" id="playButton">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <iframe id="youtubeVideo" width="800" height="450" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="book-a-table">
+                <div class="book-a-table-form">
+                    <h2>Book a table</h2>
+                    <input type="text" placeholder="Phone">
+                    <select>
+                        <option>3 Person</option>
+                        <option>4 Person</option>
+                        <option>5 Person</option>
+                    </select>
+                    <div class="date-picker">
+                        <input type="text" placeholder="Date" id="dateInput" readonly>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <select>
+                        <option>12:00 PM</option>
+                        <option>1:00 PM</option>
+                        <option>2:00 PM</option>
+                    </select>
+                    <button class="book-table-button">Book A Table</button>
+                </div>
+            </div>
+
+            <div class="popular-categories">
+                <h2>🔥 Our Popular category</h2>
+                <div class="category-slider">
+                    <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="category-list">
+                        <div class="category-item">
+                            <img src="./images/cheesecakes.jpg" alt="Cheesecakes">
+                            <div class="category-info">
+                                <span class="category-title">Desserts</span>
+                                <span class="category-name">Cheesecakes</span>
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <img src="./images/salmon-fry.jpg" alt="Salmon Fry">
+                            <div class="category-info">
+                                <span class="category-title">Sea Food</span>
+                                <span class="category-name">Salmon Fry</span>
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <img src="./images/hot-chocolate.jpg" alt="Hot chocolate">
+                            <div class="category-info">
+                                <span class="category-title">Beverage</span>
+                                <span class="category-name">Hot chocolate</span>
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <img src="./images/chicken_alferdo.jpg" alt="chicken_alferdo">
+                            <div class="category-info">
+                                <span class="category-title">main dishes</span>
+                                <span class="category-name">chicken_alferdo</span>
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <img src="./images/burger.png" alt="Burger">
+                            <div class="category-info">
+                                <span class="category-title">Fast Food</span>
+                                <span class="category-name">Burger</span>
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <img src="./images/pizza.png" alt="Burger">
+                            <div class="category-info">
+                                <span class="category-title">Pizza</span>
+                                <span class="category-name">Pizza</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-arrow next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="features-container">
+
+        <div class="feature-box">
+            <img src="./images/quality-foods.png" alt="Quality Foods">
+            <h3>Quality Foods</h3>
+            <p>Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="images/fast-delivery.png" alt="Fast Delivery">
+            <h3>Fast Delivery</h3>
+            <p>Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="images/delicious-recipes.png" alt="Delicious Recipes">
+            <h3>Delicious Recipes</h3>
+            <p>Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.</p>
+        </div>
+
+    </div>
+
+    <div class="offer-container">
+
+        <div class="offer-content">
+            <div class="image-container">
+                <img src="./images/dish1.png" alt="Dish 1" class="dish">
+                <img src="./images/dish2.png" alt="Dish 2" class="dish">
+                <div class="save-percentage" id="savePercentage">Save 55%</div>
+            </div>
+
+            <div class="text-content">
+                <h2 class="offer-title">TODAY SPECIAL OFFER</h2>
+                <h1>Explore Irresistible Promotions!</h1>
+                <p class="offer-description">Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary.</p>
+                <button class="order-button">Order Today</button>
+            </div>
+        </div>
+    </div>
+    <div class="menu-container">
+        <h1 class="OurSpecialsMenu">Our Specials Menu</h1>
+
+        <div class="menu-tabs">
+            <button class="tab-button active" data-category="main-dishes">Main Dishes</button>
+            <button class="tab-button" data-category="desserts">Desserts</button>
+            <button class="tab-button" data-category="sea-food">Sea Food</button>
+            <button class="tab-button" data-category="beverage">Beverage</button>
+        </div>
+
+        <div class="menu-items">
+            <!-- Food items will be dynamically added here by JavaScript -->
+        </div>
+    </div>
+    
+    <div class="landing-container">
+        <div class="left-section">
+            <img src="./images/mobile.png" alt="Phone Mockup 1" class="phone-mockup">
+        </div>
+
+        <div class="right-section">
+            <h1>Are you Ready to Start your online Order?</h1>
+            <p>Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now</p>
+
+            <div class="download-buttons">
+                <a href="#" class="app-store-button">
+                  <i class="fa-brands fa-apple"></i>
+                    App Store
+                </a>
+                <a href="#" class="play-store-button">
+                   <i class="fa-brands fa-google-play"></i>
+                    Play Store
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="chefs-section">
+        <h2>MASTER CHEFS</h2>
+        <h1 style="color: #8b7355;">Meet Our Special Chefs</h1>
+
+        <div class="chefs-container">
+
+            <div class="chef-card">
+                <div class="image-wrapper">
+                    <img src="images/chef1.jpg" alt="Alexander Petllo">
+                     <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="ribbon">
+                    <h3>Alexander Petllo</h3>
+                    <p>ASSISTANT CHEF</p>
+                </div>
+            </div>
+
+            <div class="chef-card">
+                <div class="image-wrapper">
+                    <img src="images/chef2.jpg" alt="Mendia Juxef">
+                       <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="ribbon">
+                    <h3>Mendia Juxef</h3>
+                    <p>BURGER KING</p>
+                </div>
+            </div>
+
+            <div class="chef-card">
+                <div class="image-wrapper">
+                    <img src="images/chef3.jpg" alt="Petro William">
+                       <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="ribbon">
+                    <h3>Petro William</h3>
+                    <p>MAIN CHEF</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="news-section">
+        <h2>NEWS & BLOG</h2>
+        <h1 style="color: black;">Our Latest News & Blog</h1>
+
+        <div class="news-container">
+
+            <div class="news-card">
+                <div class="image-wrapper">
+                    <img src="./images/news1.jpg" alt="Picked up a Brussels burger Sprouts with ham">
+                    <div class="date-overlay">
+                        <span  class="day">24</span>
+                        <span class="month">DEC</span>
+                    </div>
+                </div>
+
+                <div class="news-content">
+                    <p class="author" style="color: black;">BY MD SOHAG • BURGER,FOOD</p>
+                    <h3 style="color: black;">Picked up a Brussels burger Sprouts with ham</h3>
+                    <a href="#" class="read-more" style="color: black;">READ MORE <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="image-wrapper">
+                    <img src="./images/news2.jpg" alt="This prefabricated passive house is highly sustainable">
+                    <div class="date-overlay">
+                        <span class="day">18</span>
+                        <span class="month">NOV</span>
+                    </div>
+                </div>
+
+                <div class="news-content">
+                    <p class="author" style="color: black;">BY MD SOHAG • BURGER,FOOD</p>
+                    <h3 style="color: black;">This prefabricated passive house is highly sustainable</h3>
+                    <a href="#" class="read-more" style="color: black;">READ MORE <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about-us">
+                <h3>About Us</h3>
+                <p>Continued at zealously necessary is Surrounded sir motionless she end literature. Gay direction neglected.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section explore">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Company Profile</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 175 10h Street, Office 375 Berlin, De 21562</p>
+                <p><i class="fas fa-phone"></i> +123 34598768 <br>+554 34598734</p>
+                <p><i class="fas fa-envelope"></i> food@restan.com</p>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <p>Join our subscribers list to get the latest news and special offers.</p>
+                <form>
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    <label><input type="checkbox"> I agree to the Privacy Policy</label>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Copyright 2025. Restan. All Rights Reserved</p>
+             <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
